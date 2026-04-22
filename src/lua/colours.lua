@@ -139,10 +139,56 @@ local function MakeClassic(): ColourMap
 	}
 end
 
+local function MakeWord55 (): ColourMap
+
+	local blue = {0.0, 0.0, 0.7}
+	local lightgray = {0.85, 0.85, 0.85}
+	local white = {1.0, 1.0, 1.0}
+	local yellow = {1.0, 1.0, 0.0}
+
+	return {
+		Desktop      = blue,
+		Paper        = blue,
+		MarkerFG     = white,
+		StatusbarBG  = blue,
+		StatusbarFG  = white,
+		MessageBG    = blue,
+		MessageFG    = yellow,
+		StyleFG      = lightgray,
+		ControlFG    = white,
+		ControlBG    = blue,
+		H1_BG        = blue,
+		H1_FG        = yellow,
+		H2_BG        = blue,
+		H2_FG        = yellow,
+		H3_BG        = blue,
+		H3_FG        = lightgray,
+		H4_BG        = blue,
+		H4_FG        = lightgray,
+		LN_BG        = blue,
+		LN_FG        = lightgray,
+		LB_BG        = blue,
+		LB_FG        = lightgray,
+		L_BG         = blue,
+		L_FG         = lightgray,
+		PRE_BG       = blue,
+		PRE_FG       = lightgray,
+		P_BG         = blue,
+		P_FG         = lightgray,
+		Q_BG         = blue,
+		Q_FG         = lightgray, 
+		RAW_BG       = blue,
+		RAW_FG       = lightgray,
+		V_BG         = blue,
+		V_FG         = lightgray,
+	}
+end
+
 local Palettes: {[string]: ColourMap} = {
 	Dark = MakeDark(),
 	Light = MakeLight(),
 	Classic = MakeClassic(),
+	Word55 = MakeWord55(),
 }
 
 -----------------------------------------------------------------------------
